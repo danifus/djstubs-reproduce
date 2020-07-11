@@ -1,0 +1,2 @@
+djmypytest/.mypy_cache
+djmypytest/db.sqlite3
