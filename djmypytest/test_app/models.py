@@ -3,8 +3,8 @@ from django.db import models
 
 class ManagerA(models.Manager):
 
-    def do_something(self, other_obj: "ModelB"):
-        return None
+    def do_something(self) -> "ModelB":
+        return ModelB.objects.create(movie="There's something about mypy")
 
 
 class ModelA(models.Model):
